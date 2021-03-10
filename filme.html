@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>NETFLIX CLONE</title>
+    <style>
+        :root{
+            --vermelho: #e50914;
+            --preta: #141414;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;   
+        }
+        
+        body{
+            background: var(--preta);
+            font-family: 'Arial', Times, serif;
+            color: white;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .container iframe{            
+            height: 80vh;
+            width: 100%;            
+        }
+
+        .voltar{
+            margin-left: 30px;
+            padding: 20px;                    
+            display: flex;            
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 20px;
+        }
+
+        .voltar-texto{
+            display: none;
+            transition: .5s ease all;
+        }
+
+        .container i:hover {            
+            font-size: 45px;
+        }
+
+        .voltar:hover .voltar-texto {
+            margin-left: 15px;
+            display: inline;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="voltar">
+            <i class="fas fa-arrow-left fa-2x"></i><span class="voltar-texto">Voltar à navegação</span>
+        </div>
+        <iframe src="https://www.youtube.com/embed/an3-5XYoRqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+    <script src="https://kit.fontawesome.com/83ac447d60.js" crossorigin="anonymous"></script>
+</body>
+</html>
