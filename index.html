@@ -15,19 +15,20 @@
     <title>NETFLIX CLONE</title>
 </head>
 <body>
-    <div class="caixa" >
+    <div id="caixa" class="caixa" style="display: none" >
         <div class="modal">
+            <i onclick="modalNone()" class="far fa-times-circle"></i>
             <div class="titulo">
                 <h6><span class="letraN">N</span>SÉRIE</h6>
                 <h3>O ATIRADOR</h3>
                 <div class="barraTempo">                    
-                    <div class="barra"></div>
+                    <div class="barraRed"></div><div class="barra"></div>
                     <div class="tempo">2 de 42min</div>
                 </div>
-                <button role="button" class="botao2">
-                        <i class="fas fa-play"></i>
-                        <span>Continuar</span>                        
-                </button>
+                <a href="filme.html" class="botao2">
+                    <i class="fas fa-play"></i>
+                    <span>Continuar</span>                        
+                </a>
             </div>  
         </div>        
     </div>  
@@ -59,8 +60,8 @@
                             ASSISTIR AGORA
                         </button>
                     </a>
-                    <a href="">
-                        <button role="button" class="botao">
+                    <a >
+                        <button onclick="modalBlock()" role="button" class="botao">
                             <i class="fas fa-info-circle"></i>
                             MAIS INFORMAÇÕES
                         </button>
@@ -88,5 +89,6 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
