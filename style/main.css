@@ -104,3 +104,84 @@ header nav a:hover{
 .carrosel-filmes{
     margin-top: 5px;
 }
+
+.caixa{
+    position: absolute;
+    display: flex;    
+    justify-content: center;    
+    height: 800px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+
+.modal{    
+    margin: 40px auto 0 auto;
+    position: absolute;    
+    height: 700px;
+    width: 80vw;
+    background:  linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url('../img/atirador.png');
+    background-size: cover;
+    z-index: 1000;
+    border-radius: 4px;  
+    display: flex;    
+    justify-content: center; 
+    flex-direction: column;  
+}
+
+.modal .titulo{
+    margin-left: 40px;
+}
+
+.modal .titulo h3{
+    letter-spacing: 8px;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', Arial, sans-serif
+}
+
+.modal .titulo h6{
+    letter-spacing: 5px;
+    display: flex;    
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal .titulo .letraN{
+    color: var(--vermelho);
+    font-size: 20px;
+}
+
+.modal .titulo .barraTempo{
+    margin-top: 20px;
+    height: 10px;    
+    display: flex;    
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal .barraTempo .barra{
+    height: 2px;
+    width: 200px;
+    background-color: rgba(100,100,100,0.5);
+}
+
+.modal .barraTempo .tempo{
+    color: rgba(200,200,200,0.6);
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.modal .titulo .botao2{
+    margin-top: 10px;
+    background-color: white;
+    border: none;    
+    border-radius: 4px;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;    
+}
+
+.modal .titulo .botao2 span{
+    margin-left: 10px;
+}

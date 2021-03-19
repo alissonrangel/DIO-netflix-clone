@@ -31,11 +31,15 @@
         }
 
         .container iframe{            
+            margin-top: 10vh;
             height: 80vh;
             width: 100%;            
         }
 
         .voltar{
+            position: absolute;
+            top: 0px;
+            left: 10px;
             margin-left: 30px;
             padding: 20px;                    
             display: flex;            
@@ -59,12 +63,19 @@
             font-size: 25px;
         }
         
+        .voltar a{
+            display: flex;            
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <div class="voltar">
-            <i class="fas fa-arrow-left fa-2x"></i><span class="voltar-texto">Voltar à navegação</span>
+            <a href="index.html"><i class="fas fa-arrow-left fa-2x"></i><span class="voltar-texto">voltar à navegação</span></a>
         </div>
         <iframe src="https://www.youtube.com/embed/an3-5XYoRqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </main>
